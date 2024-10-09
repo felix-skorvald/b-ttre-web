@@ -8,6 +8,7 @@ body {
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    font-size: larger;
 }
 
 /* HEADER */
@@ -25,6 +26,18 @@ header {
     color: white;
 }
 
+header>h1 {
+    margin: 1em;
+}
+
+header>h3 {
+    margin-bottom: 0.5em;
+}
+
+header>p {
+    margin-top: 0.5em;
+}
+
 header a {
     background-color: green;
     border: 1px solid white;
@@ -32,8 +45,6 @@ header a {
     padding: 1em;
 
 }
-
-/* HEADER */
 
 /* INTRO */
 
@@ -46,19 +57,35 @@ header a {
 
 .intro p {
     max-width: 50%;
+    transition: max-width 1s;
 }
 
-/* INTRO */
-
+/* PICTURES */
 .pictures {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 30vh;
+
 }
 
-img {
-    width: 100px;
-    height: 90px;
+.picture {
+    background-size: cover;
 }
+
+.one {
+    background-image: url(./img/1.jpg);
+}
+
+.two {
+    background-image: url(./img/2.jpg);
+}
+.three {
+    background-image: url(./img/3.jpg);
+}
+.four {
+    background-image: url(./img/4.jpg);
+}
+/* PROGRAM!!! */
 
 .program {   
     display: flex;
@@ -67,18 +94,35 @@ img {
     align-items: center;
 }
 
+.program>h2 {
+    margin-top: 3em;
+}
+
 .program>div {
     max-width: 50%;
+    transition: max-width 1s;
+}
+
+.program>div>h3 {
+    margin-top: 2em;
+}
+
+.program>div>p {
+    margin-top: 1em;
+}
+
+.program>div>p:last-child {
+    margin-bottom: 4em;
 }
 
 /* INFO */
 
 .info {
     background-color: rgb(97, 174, 90);
-    min-height: 100vh;
+    min-height: 110vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 5em;
+    grid-template-rows: 1fr 50%;
 }
 
 /* KANSKE TA BORT DENNA */
@@ -123,15 +167,36 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: 1px solid black;
 }
 
-.map {
-
+.maps>h3 {
+    margin-top: 1em;
 }
 
 .map iframe{
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    box-shadow: 0px 5px 5px black;
+    box-shadow: 10px 10px 0px black;
+}
+
+@media (max-width: 900px){
+    .intro>p {
+        max-width: 70%;
+        transition: max-width 1s;
+    }
+
+    .program>div {
+        max-width: 90%;
+        transition: max-width 1s;
+    }
+
+    .pictures {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 10vh;
+    
+    }
+    
 }
