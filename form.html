@@ -9,12 +9,49 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="body-form">
+    <a href="index.html">TILLBAKA</a>
+    <form action="#">
+        <h2>Bättre web</h2>
+        <label for="name">Namn:</label>
+        <input type="text" name="name" id="name" placeholder="fullständigt">
+        <label for="age">Ålder:</label>
+        <input type="text" name="age" id="age" placeholder="ÅÅMMDD">
+        <label for="email">E-post:</label>
+        <input type="text" name="email" id="email" placeholder="exempel@mail.com">
+        <label for="adress">Adress:</label>
+        <input type="text" name="adress" id="adress" placeholder="(valfritt)">
 
-    <form action="">
-       
-    </form>
+        <div>
+            <label for="days"> Vilka dagar stannar ni?</label>
+            <div class="check">
+                <input type="checkbox" name="" id="fri">
+                <label for="fri">Fredag</label>
+
+            </div>
+            <div class="check">
+                <input type="checkbox" name="" id="sat">
+                <label for="sat">Lördag</label>
+
+            </div>
+            <div class="check">
+                <input type="checkbox" name="" id="sun">
+                <label for="sun">Söndag</label>
+                
+            </div>
+
+            </div>
     
+    <label for="food">Önskad mat:</label>
+    <select name="" id="food">
+        <option value="none">(none)</option>
+        <option value="meat">Kött</option>
+        <option value="fish">Fisk</option>
+        <option value="veg">Vegetarisk</option>
+    </select>
+
+    <button>SKICKA ANMÄLAN</button>
+    </form>
     
 </body>
 </html>
