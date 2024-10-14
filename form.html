@@ -10,56 +10,80 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="body-form">
-    <a href="index.html">TILLBAKA</a>
+
     <form action="" autocomplete="on">
         <h1>Boka plats</h1>
         <h3>Bättre web 18 - 20 oktober</h3>
-        <div class="names">
+        <div class="double">
             <div class="input-container">
-                <label for="firstname">Förnamn</label>
-                <input type="text" name="fname" id="firstname">
+                <label for="firstname" class="reqlabel">Förnamn</label>
+                <input type="text" name="fname" id="firstname" required>
             </div> 
             <div class="input-container">   
-                <label for="lastname">Efternamn</label>
-                <input type="text" name="lastname" id="lastname">
+                <label for="lastname" class="reqlabel">Efternamn</label>
+                <input type="text" name="lastname" id="lastname" required>
             </div>
         </div>
-        <label for="email">E-post:</label>
-        <input type="text" name="email" id="email" >
-        <label for="zip">Postnummer</label>
-        <input type="text" name="zip" id="zip">
-        <label for="adress">Adress:</label>
-        <input type="text" name="adress" id="adress">
+        <label for="email" class="reqlabel">E-post:</label>
+        <input type="email" name="email" id="email" required>
+        <label for="adress" class="reqlabel">Adress:</label>
+        <input type="text" name="adress" id="adress" required>
+        <div class="double">
+            <div class="input-container">
+                <label for="zip" class="reqlabel">Postnummer</label>
+                <input type="text" name="zip" id="zip" minlength="5" required>
+            </div>
+            <div class="input-container">
+                <label for="ort" class="reqlabel">Ort</label>
+                <input type="text" name="ort" id="ort" required>
+            </div>
+
+        </div>
 
         <div>
-            <label for="days"> Vilka dagar stannar ni?</label>
+            <p class="reqlabel">Vilka dagar stannar ni?</p>
             <div class="check">
-                <input type="checkbox" name="" id="fri">
+                <input type="checkbox" name="days" id="fri" checked>
                 <label for="fri">Fredag</label>
 
             </div>
             <div class="check">
-                <input type="checkbox" name="" id="sat">
+                <input type="checkbox" name="days" id="sat" checked>
                 <label for="sat">Lördag</label>
 
             </div>
             <div class="check">
-                <input type="checkbox" name="" id="sun">
+                <input type="checkbox" name="days" id="sun" checked>
                 <label for="sun">Söndag</label>
                 
             </div>
 
-            </div>
-    
-    <label for="food">Önskad mat:</label>
-    <select name="" id="food">
-        <option value="none">(none)</option>
-        <option value="meat">Kött</option>
-        <option value="fish">Fisk</option>
-        <option value="veg">Vegetarisk</option>
-    </select>
+        </div>
 
-    <button class="formbtn">Fortsätt</button>
+        <div>
+            <p class="reqlabel">Önskad mat</p>
+            <div class="radio">
+                <input type="radio" name="food" id="meat" checked>
+                <label for="meat">Kött</label>
+
+            </div>
+            <div class="radio">
+                <input type="radio" name="food" id="fish">
+                <label for="fish">Fisk</label>
+
+            </div>
+            <div class="radio">
+                <input type="radio" name="food" id="veg">
+                <label for="veg">Vegetarisk</label>
+                
+            </div>
+
+        </div>
+        <label for="allergy" class="allergy">Allergier</label>
+        <textarea name="allergy" id="allergy"></textarea>
+
+
+    <button type="submit" class="formbtn">Fortsätt</button>
     </form>
     
 </body>
