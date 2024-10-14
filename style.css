@@ -239,16 +239,6 @@ footer {
     align-items: center;
 }
 
-.body-form>a {
-    text-decoration: none;
-    color: black;
-    position: fixed;
-    left: 0;
-    top: 0;
-    margin: 2em;
-
-}
-
 form {
     background-color: var(--darkercolor);
     border-radius: 10px;
