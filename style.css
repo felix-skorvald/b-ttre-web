@@ -338,7 +338,7 @@ label:hover {
 
 @media (max-width: 900px){
     .intro>p {
-        max-width: 70%;
+        max-width: 90%;
         transition: max-width 1s;
         
     }
