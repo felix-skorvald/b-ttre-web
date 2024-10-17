@@ -39,9 +39,11 @@ header>h1 {
 }
 
 header>h3 {
+    
     font-size: 45px;
     font-weight: 200;
     margin: 1rem;
+    margin-top: auto;
     text-align: center;
 }
 
@@ -50,10 +52,14 @@ header>p {
     text-align: center;
 }
 
-header a {
+header>a {
     border-radius: 10px;
     padding: 1em;
+}
 
+header>span {
+    margin-top: auto;
+    margin-bottom: 1em;
 }
 
 /* INTRO */
