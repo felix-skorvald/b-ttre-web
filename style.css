@@ -94,23 +94,13 @@ header>span {
 
 }
 
-.picture {
-    background-size: cover;
-}
+.pictures>div>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
 
-.one {
-    background-image: url(./img/1.jpg);
-}
-
-.two {
-    background-image: url(./img/2.jpg);
-}
-.three {
-    background-image: url(./img/3.jpg);
-}
-.four {
-    background-image: url(./img/4.jpg);
-}
 /* PROGRAM!!! */
 
 .program {   
@@ -241,14 +231,33 @@ header>span {
 /* FOOTER */
 
 footer {
-    background-color: var(--thirdcolor);
+    background-color: var(--darkercolor);
     display: flex;
     justify-content: center;
+    color: white;
+    font-weight: 200;
+    padding:1em;
 }
 
 footer>a {
-    color: var(--darkercolor);
-    font-weight: 150;
+    color: white;
+    transition:color 0.3s;
+}
+
+footer>a:hover {
+    color: #f9f871;
+}
+
+footer>a::after {
+    content:"";
+    background-image: url(./img/linked.svg);
+    background-size: fill;
+    background-repeat: none;
+    background-position: center;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 0.5em;
 }
 
 /* FORMULÄR */
